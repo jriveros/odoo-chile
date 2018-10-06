@@ -1,7 +1,7 @@
 # odoo-chile
 Odoo Chile
 
-Compendio de add-ons para la localización chilena de Odoo para versión 11.0. 
+Compendio de add-ons para la localización chilena de Odoo para versión 12.0. 
 NOTA: Los addons se han probado sobre Ubuntu 16.04
 
 Elementos contemplados en la localización:
