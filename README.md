@@ -36,3 +36,8 @@ Correcciones realizadas:
 - Se han corregido algunos errores de dependencias Python que impedían las instalación de los componentes de Factura Electrónica en la versión 11.0 (ver archivo requirements.txt). 
 
 - Error en archivo de monedas que impedían la instalación del add-on para factura electrónica (archivo res_currency.csv).
+
+Errores:
+
+- Se impide instalación en Odoo 12.0 por account_invoicing faltante. Se agrega provisoriamente para analizar
+
