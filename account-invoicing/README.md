@@ -1,37 +1,28 @@
-# odoo-chile-12
-Odoo Chile v12
+[![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/95/12.0.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-account-invoicing-95)
+[![Build Status](https://travis-ci.org/OCA/account-invoicing.svg?branch=12.0)](https://travis-ci.org/OCA/account-invoicing)
+[![Coverage Status](https://coveralls.io/repos/OCA/account-invoicing/badge.svg?branch=12.0)](https://coveralls.io/r/OCA/account-invoicing?branch=12.0)
 
-Compendio de add-ons para la localización chilena de Odoo versión 12.0. 
+OCA account invoicing modules for Odoo
+======================================
 
-Elementos contemplados en la localización:
+This project aim to deal with modules related to manage invoicing in a generic way. You'll find modules that:
 
-- Plan de Cuentas SII
-- Indicadores de Impuestos SII
-- Factura Electrónica SII
-- Cesión de Créditos SII
-- Moneda CLP (Tipo de Cambio Inverso, por ejemplo: 650 CLP por USD)
-- Monedas Chile (UF y UTM)
-- Actualización de Tipos de Cambio con API SBIF Chile (USD, EUR, UF y UTM)
-- Nómina de Remuneraciones según Código del Trabajo de Chile
-
-Este proyecto es un compendio de addons desarrollado por la comunadad Open-source de Odoo. La idea es generar un repositorio completo que pueda ser instalable en la versiòn 11 de Odoo (Enterprise).
-
-Los componentes fueron tomados de los siguientes repositorios:
-
-- Actualización de Tipos de Cambio y T/C Inverso:
-git@github.com:OCA/currency.git#11.0
-
-- Facturación Electrónica:
-git@github.com:odoocoop/facturacion_electronica.git#11.0
-
-- Nómina Chile:
-git@github.com:KonosCL/addons-konos.git#11.0
+ - Add a validation step on invoicing process
+ - Add check on invoice
+ - Unit rounded invoice
+ - Utils and ease of use for invoicing with OpenERP
+ - ...
 
 
-Correcciones realizadas:
 
-- El módulo "currency_rate_update" se ha ampliado para incluir la actualización de los tipos de cambio para USD, EUR, UF y UTM a partir del API provista por la SBIF (https://api.sbif.cl). Se crean las monedas UF y UTM en la instalación.
+Translation Status
+------------------
+[![Transifex Status](https://www.transifex.com/projects/p/OCA-account-invoicing-12-0/chart/image_png)](https://www.transifex.com/projects/p/OCA-account-invoicing-12-0)
 
-- Se han corregido algunos errores de dependencias Python que impedían las instalación de los componentes de Factura Electrónica en la versión 11.0 (ver archivo requirements.txt). 
+----
 
-- Error en archivo de monedas que impedían la instalación del add-on para factura electrónica (archivo res_currency.csv).
+OCA, or the Odoo Community Association, is a nonprofit organization whose 
+mission is to support the collaborative development of Odoo features and 
+promote its widespread use.
+
+http://odoo-community.org/
